@@ -40,3 +40,16 @@
   float: left;
 }
 
+.profile >* {
+    display: inline;
+}
+
+.profile img {
+    width: 3em;
+    margin-right: 0.5em;
+    margin-left: 1em;
+}
+
+.profile p {
+    color: #ffffff;
+}
