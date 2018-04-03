@@ -1,58 +1,27 @@
-@font-face {
-    font-family: "Graphik";
-    src: url(../src/fonts/Graphik-Regular.otf) format("opentype") ;
-}
-@font-face {
-    font-family: "Graphik2";
-    src: url(../src/fonts/Graphik-Bold.otf) format("opentype");
-}
-@font-face {
-    font-family: "Graphik3";
-    src: url(../src/fonts/Graphik-Light.otf) format("opentype");
+#login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-@font-face {
-    font-family: "Graphik4";
-    src: url(../src/fonts/Graphik-Semibold.otf) format("opentype");
+.items >* {  
+  margin: 1.5em;
 }
 
-
-.App {
-  text-align: center;
+.logo {
+  max-width: 5em;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
 }
 
-h1 {
-  font-family: "Graphik2", Arial, Helvetica, sans-serif;
-  margin-left: 20px;
+.google {
+  background-color:  #dd4b39;
+  color: #fff;
 }
 
-p {
-  font-family: "Graphik", Arial, Helvetica, sans-serif;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-  font-family: "Graphik2", Arial, Helvetica, sans-serif;
-  letter-spacing: 0.05em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.facebook {
+  background-color:  #3b5998;
+  color: #fff;  
 }

@@ -5,7 +5,7 @@ class Accounts extends Component {
   render() {
     return (
       <div>
-        
+        accounts
       </div>
     );
   }
