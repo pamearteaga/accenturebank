@@ -1,0 +1,30 @@
+.navbar-default {
+    background-color: #9802e2;
+    border: none;
+}
+
+.navbar-default .navbar-brand{
+  color: white;
+  margin-left: 0px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-header{
+  font-family: "Graphik4", Arial, Helvetica, sans-serif;
+}
+
+.navbar-header img{
+  width: 20px;
+  height: auto;
+  margin: 13px 0 10px 20px;
+  display: inline-block;
+  float: left;
+}
+

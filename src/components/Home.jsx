@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from './navbar/Navbar';
+import Navbar from './navbar/Navbar.jsx';
 
 class Home extends Component {
   constructor(src, title, onClick) {
@@ -11,14 +11,15 @@ class Home extends Component {
     };
 }
   render() {
+    const { src } = this.props;
+    const { title } = this.props;
+    const { onClick } = this.props;
     return (
       <div>
         <Navbar
           src={src}
           title={title}
-          onClick={onClick}
-          counter={counter}
-          select={select} />
+          onClick={onClick} />
       </div>
     );
   }
