@@ -16,6 +16,14 @@
     background-color: #ffffff;
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #f7f302;
+}
+
 .navbar-header{
   font-family: "Graphik4", Arial, Helvetica, sans-serif;
 }
