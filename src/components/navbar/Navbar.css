@@ -12,8 +12,20 @@
     border-color: #ffffff;
 }
 
+.navbar-default .navbar-toggle:hover {
+    background-color: #d483fc;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #f7f302;
 }
 
 .navbar-header{

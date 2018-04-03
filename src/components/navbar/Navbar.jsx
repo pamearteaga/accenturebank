@@ -33,9 +33,10 @@ class Navbar extends Component {
           {/* Collect the nav links, forms, and other content for toggling */}
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav">
-              <li className="active"><a href="#">Link</a></li>
-              <li><Link to="/Accounts">Mis Cuentas</Link></li>
-              <li><Link to="/Maps">Sucursales</Link></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><Link to="/Accounts">My Accounts</Link></li>
+              <li><a href="#">Credit Cards</a></li>
+              <li><a href="#">Logout</a></li>
             </ul>
           </div>{/* /.navbar-collapse */}
         </div>{/* /.container-fluid */}
