@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../navbar/Navbar.css';
 
 class Navbar extends Component {
+  constructor(src, title, onClick) {
+    super(src, title, onClick);
+    this.state = {
+      src,
+      title,
+      onClick,
+    };
+  }
   render() {
+    const { src } = this.props;
+    const { title } = this.props;
+    const { onClick } = this.props;
     return (
       <div>
         <nav className="navbar navbar-default">
@@ -22,7 +34,7 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav">
               <li><a href="#">Dashboard</a></li>
-              <li><a href="#">My Accounts</a></li>
+              <li><Link to="/Accounts">My Accounts</Link></li>
               <li><a href="#">Credit Cards</a></li>
               <li><a href="#">Logout</a></li>
             </ul>
