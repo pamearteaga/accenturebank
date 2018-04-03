@@ -12,6 +12,10 @@
     border-color: #ffffff;
 }
 
+.navbar-default .navbar-toggle:hover {
+    background-color: #d483fc;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #ffffff;
 }
