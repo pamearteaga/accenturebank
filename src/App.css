@@ -1,5 +1,28 @@
+@font-face {
+    font-family: "Graphik";
+    src: url(../src/fonts/Graphik-Regular.otf) format("opentype") ;
+}
+@font-face {
+    font-family: "Graphik2";
+    src: url(../src/fonts/Graphik-Bold.otf) format("opentype");
+}
+@font-face {
+    font-family: "Graphik3";
+    src: url(../src/fonts/Graphik-Light.otf) format("opentype");
+}
+
+
 .App {
   text-align: center;
+}
+
+h1 {
+  font-family: "Graphik2", Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+}
+
+p {
+  font-family: "Graphik", Arial, Helvetica, sans-serif;
 }
 
 .App-logo {
@@ -16,6 +39,8 @@
 
 .App-title {
   font-size: 1.5em;
+  font-family: "Graphik2", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
 }
 
 .App-intro {
