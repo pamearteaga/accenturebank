@@ -1,3 +1,34 @@
+@font-face {
+  font-family: "Graphik";
+  src: url(../src/fonts/Graphik-Regular.otf) format("opentype") ;
+}
+@font-face {
+  font-family: "Graphik2";
+  src: url(../src/fonts/Graphik-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Graphik3";
+  src: url(../src/fonts/Graphik-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik4";
+  src: url(../src/fonts/Graphik-Semibold.otf) format("opentype");
+}
+
+
+.App {
+text-align: center;
+}
+
+h1 {
+font-family: "Graphik2", Arial, Helvetica, sans-serif;
+}
+
+p {
+font-family: "Graphik", Arial, Helvetica, sans-serif;
+}
+
 #login {
   height: 100vh;
   display: flex;
