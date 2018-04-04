@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../accounts/Accounts.css';
 
-const api_url = 'https://api.myjson.com/bins/qmxwd?pretty=1';
+const api_url = 'https://api.myjson.com/bins/17a7z1?pretty=1';
 
 class Accounts extends Component {
 
@@ -26,10 +26,10 @@ constructor(props) {
     this.fetchData();
   }
 
-
   render() {
     const {cuentas} = this.state;
-    console.log({cuentas});
+    const prueba = cuentas.DATA;
+    console.log(prueba);
     return (
       <div className="Accounts">
         <select>
