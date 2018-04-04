@@ -17,7 +17,8 @@ export default class Gastado extends Component {
               <h4 className='consumido'>Haz consumido un 26% de los ingresos de este mes</h4>             
               <PieChart width={250} height={150} onMouseEnter={this.onPieEnter}>
                 <Pie
-                  data={data} 
+                  data={data}
+                  dataKey="value"
                   cx={130} 
                   cy={68} 
                   innerRadius={20}
@@ -31,7 +32,8 @@ export default class Gastado extends Component {
                 </Pie>
                 <Pie
                   data={data01}
-                  nameKey="name"
+                  dataKey="value"
+                  nameKey="name "
                   cx={130} 
                   cy={68} 
                   innerRadius={45}
