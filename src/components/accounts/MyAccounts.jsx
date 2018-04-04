@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { Button, Row, Panel} from 'react-bootstrap';
+import './../../components/accounts/MyAccounts.css';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
-import { Button, Row } from 'react-bootstrap';
 import 'react-datepicker/dist/react-datepicker.css';
 
 moment.locale('es');
@@ -29,18 +30,16 @@ class MyAccounts extends Component {
       return el.NCUENTA == select;
     });
 
-    console.log(newMove[0].MOVIMIENTOS);
-    
     const datearray = [];
     newMove[0].MOVIMIENTOS.map(date => (
       datearray.push(moment(date.FECHA, "DD-MM-YYYY"))
     ))
     console.log(datearray);
     
-    this.setState({ 
-      cuenta: newMove[0], 
-      singleMove: newMove[0].MOVIMIENTOS, 
-      loading: false, 
+    this.setState({
+      cuenta: newMove[0],
+      singleMove: newMove[0].MOVIMIENTOS,
+      loading: false,
       fechas: datearray,
     })
   }
@@ -64,49 +63,44 @@ class MyAccounts extends Component {
       singleMove: newMove,
     })
     
-
-    // const fechas = this.state.fechas;
-    // const newDates = fechas.filter(function(el) {
-    //   return el == newDates;
-    // });
-    // console.log(newDates);
-    
+  
   }
 
   render() {
     const { cuenta, loading, fechas, singleMove } = this.state;
+    let counter = 0;
     console.log(this.state);
     
     return (
       <div className="Accounts">
         <Button onClick={this.handleclick.bind(this)}>Regresar</Button>
-        <DatePicker          
+        <DatePicker
           onChange={this.handleChange.bind(this)}
           includeDates={fechas}
           placeholderText="Fechas con Movimientos" />
 
         {loading === false ?
           singleMove.map(acc => {
+            counter ++;
             return (
-              <Row key={acc.FECHA}>
-                <Button id={acc.FECHA}>
-                  <h4>{acc.EMPRESA}</h4>
-                  <p>{acc.FECHA}</p>
-                  <p>{acc.MONTO} Soles</p>
-                </Button>
+              <Row key={counter}>
+                <div>
+                  <Panel className="panel">
+                    <Panel.Heading>
+                      <h4>{acc.EMPRESA}</h4>
+                    </Panel.Heading>
+                    <Panel.Body>
+                      <p>Fecha: {acc.FECHA}</p>
+                      <p>Monto: {acc.MONTO} Soles</p>
+                    </Panel.Body>
+                  </Panel>
+                </div>
               </Row>
-
             )
-
           })
-
           :
-          <h2> Cargando
-          </h2>
-
+          <h2> Cargando</h2>
         }
-
-
       </div>
     );
   }
