@@ -35,6 +35,7 @@ class Navbar extends Component {
             <ul className="nav navbar-nav">
               <li><a href="#">Dashboard</a></li>
               <li><Link to="/Accounts">My Accounts</Link></li>
+              
               <li><a href="#">Credit Cards</a></li>
               <li><a href="#">Logout</a></li>
             </ul>
