@@ -29,8 +29,6 @@ class MyAccounts extends Component {
       return el.NCUENTA == select;
     });
 
-    console.log(newMove[0].MOVIMIENTOS);
-    
     const datearray = [];
     newMove[0].MOVIMIENTOS.map(date => (
       datearray.push(moment(date.FECHA, "DD-MM-YYYY"))
@@ -64,17 +62,12 @@ class MyAccounts extends Component {
       singleMove: newMove,
     })
     
-
-    // const fechas = this.state.fechas;
-    // const newDates = fechas.filter(function(el) {
-    //   return el == newDates;
-    // });
-    // console.log(newDates);
     
   }
 
   render() {
     const { cuenta, loading, fechas, singleMove } = this.state;
+    let counter = 0;
     console.log(this.state);
     
     return (
@@ -87,8 +80,9 @@ class MyAccounts extends Component {
 
         {loading === false ?
           singleMove.map(acc => {
+            counter ++;
             return (
-              <Row key={acc.FECHA}>
+              <Row key={counter }>
                 <Button id={acc.FECHA}>
                   <h4>{acc.EMPRESA}</h4>
                   <p>{acc.FECHA}</p>
