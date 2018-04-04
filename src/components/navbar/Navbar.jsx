@@ -39,7 +39,7 @@ class Navbar extends Component {
                   <p>{title}</p>
                 </div>
               </li>
-              <li><a href="#">Dashboard</a></li>
+              <li><Link to="/Dashboard">Dashboard</Link></li>
               <li><Link to="/Accounts">My Accounts</Link></li>
               <li><a href="#">Credit Cards</a></li>
               <li><a href="#" onClick={onClick}>Logout</a></li>
