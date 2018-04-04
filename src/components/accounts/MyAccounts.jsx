@@ -80,8 +80,7 @@ class MyAccounts extends Component {
     return (
       <div className="Accounts">
         <Button onClick={this.handleclick.bind(this)}>Regresar</Button>
-        <DatePicker
-          
+        <DatePicker          
           onChange={this.handleChange.bind(this)}
           includeDates={fechas}
           placeholderText="Fechas con Movimientos" />
