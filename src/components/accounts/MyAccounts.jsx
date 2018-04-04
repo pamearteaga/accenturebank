@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Row } from 'react-bootstrap';
+import { Button, Row, Panel} from 'react-bootstrap';
+import './../../components/accounts/MyAccounts.css';
 
 class MyAccounts extends Component {
   constructor(movimientos, select) {
@@ -23,7 +24,6 @@ class MyAccounts extends Component {
 
     console.log(newMove[0]);
     this.setState({ cuenta: newMove[0], loading: false, })
-
   }
 
   render() {
@@ -34,24 +34,23 @@ class MyAccounts extends Component {
           cuenta.MOVIMIENTOS.map(acc => {
             return (
               <Row key={acc.FECHA}>
-                <Button id={acc.FECHA}>
-                  <h4>{acc.EMPRESA}</h4>
-                  <p>{acc.FECHA}</p>
-                  <p>{acc.MONTO} Soles</p>
-                </Button>
+                <div>
+                  <Panel className="panel">
+                    <Panel.Heading>
+                      <h4>{acc.EMPRESA}</h4>
+                    </Panel.Heading>
+                    <Panel.Body>
+                      <p>Fecha: {acc.FECHA}</p>
+                      <p>Monto: {acc.MONTO} Soles</p>
+                    </Panel.Body>
+                  </Panel>
+                </div>
               </Row>
-
             )
-
           })
-
           :
-          <h2> Cargando
-          </h2>
-
+          <h2> Cargando</h2>
         }
-
-
       </div>
     );
   }
