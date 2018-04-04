@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Accounts from './accounts/Accounts';
 import Navbar from './navbar/Navbar.jsx';
 import Dashboard from './dashboard/index'
+import Offices from './ContainerMap/index';
 
 class Home extends Component {
   constructor(src, title, onClick) {
@@ -20,13 +21,13 @@ class Home extends Component {
     return (
       <Router>
         <div>
-        <Navbar
-          src={src}
-          title={title}
-          onClick={onClick} />
-        <Route exact path="/Dashboard" component={Dashboard} />
-        <Route path="/Accounts" component={Accounts} />
-        {/* <Route path="/Sucursales" component={Sucursales} /> */}
+          <Navbar
+            src={src}
+            title={title}
+            onClick={onClick} />
+          <Route exact path="/Dashboard" component={Dashboard} />
+          <Route path="/Accounts" component={Accounts} />
+          <Route path="/Sucursales" component={Offices} />
         </div>
       </Router>
     );

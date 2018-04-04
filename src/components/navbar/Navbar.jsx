@@ -41,12 +41,14 @@ class Navbar extends Component {
               </li>
               <li><Link to="/Dashboard">Dashboard</Link></li>
               <li><Link to="/Accounts">My Accounts</Link></li>
+              <li><Link to="/Sucursales">Sucursales></li>
               <li><a href="#">Credit Cards</a></li>
               <li><a href="#" onClick={onClick}>Logout</a></li>
             </ul>
           </div>{/* /.navbar-collapse */}
         </div>{/* /.container-fluid */}
       </nav>
+
       </div>
     );
   }
