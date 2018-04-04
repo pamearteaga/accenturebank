@@ -25,7 +25,7 @@ class Home extends Component {
             src={src}
             title={title}
             onClick={onClick} />
-          <Route exact path="/Dashboard" component={Dashboard} />
+          <Route exact path="/" component={Dashboard} />
           <Route path="/Accounts" component={Accounts} />
           <Route path="/Sucursales" component={Offices} />
         </div>

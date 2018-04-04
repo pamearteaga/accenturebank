@@ -39,7 +39,7 @@ class Navbar extends Component {
                   <p>{title}</p>
                 </div>
               </li>
-              <li><Link to="/Dashboard"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Resumen cuentas</Link></li>
+              <li><Link to="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Resumen cuentas</Link></li>
               <li><Link to="/Accounts"><span class="glyphicon glyphicon-list" aria-hidden="true"></span>Mis cuentas</Link></li>
               <li><Link to="/Sucursales"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Sucursales</Link></li>
               <li><a href="#" onClick={onClick}><span class="glyphicon glyphicon-off" aria-hidden="true"></span>Logout</a></li>
