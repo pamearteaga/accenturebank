@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button, Row } from 'react-bootstrap';
 
 class MyAccounts extends Component {
   constructor(movimientos, select) {
@@ -21,29 +22,34 @@ class MyAccounts extends Component {
     });
 
     console.log(newMove[0]);
-    this.setState({cuenta: newMove[0], loading: false,})
-    
+    this.setState({ cuenta: newMove[0], loading: false, })
+
   }
 
   render() {
-    const {cuenta, loading} = this.state;
+    const { cuenta, loading } = this.state;
     return (
-      <div>
+      <div className="Accounts">
         {loading === false ?
-        cuenta.MOVIMIENTOS.map(acc => {
-          console.log(acc.MONTO);
-          return (
+          cuenta.MOVIMIENTOS.map(acc => {
+            return (
+              <Row key={acc.FECHA}>
+                <Button id={acc.FECHA}>
+                  <h4>{acc.EMPRESA}</h4>
+                  <p>{acc.FECHA}</p>
+                  <p>{acc.MONTO} Soles</p>
+                </Button>
+              </Row>
 
-            <p>{acc.MONTO}</p>
-          )
-          
-        })
+            )
 
-        :
-        <h2> Cargando
-        </h2>
-        
-      }
+          })
+
+          :
+          <h2> Cargando
+          </h2>
+
+        }
 
 
       </div>
