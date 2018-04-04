@@ -27,15 +27,15 @@ class Navbar extends Component {
                 <span className="icon-bar" />
                 <span className="icon-bar" />
               </button>
-              <img src="https://www.accenture.com/t20171027T083455Z__w__/dk-en/_acnmedia/Accenture/Conversion-Assets/NonSecureClients/Images/20/Accenture-Gradient-Yellow-Logo.png" alt="logo" />
-              <a className="navbar-brand" href="">Accenture Bank</a>
+              <img src="https://www.accenture.com/t20171027T083455Z__w__/dk-en/_acnmedia/Accenture/Conversion-Assets/NonSecureClients/Images/20/Accenture-Gradient-Yellow-Logo.png" alt="logo"/>
+              <a className="navbar-brand" href="#">Accenture Bank</a>
             </div>
             {/* Collect the nav links, forms, and other content for toggling */}
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav">
                 <li>
                   <div className="profile">
-                    <img src={src} alt="profilePhoto" className="img-circle img-responsive" />
+                    <img src={src} alt="profilePhoto" className="img-circle img-responsive"/>
                     <p>{title}</p>
                   </div>
                 </li>
