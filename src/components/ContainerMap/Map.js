@@ -79,7 +79,7 @@ const Suc = compose(
       position={{ lat: -12.0463,
         lng: -77.0855}}
       animation={google.maps.Animation.BOUNCE}
-      icon={'https://user-images.githubusercontent.com/32303322/38283468-89455a42-378c-11e8-8045-19b729bc2ac2.png'}
+      icon={'https://user-images.githubusercontent.com/32303322/38319169-8c0cbfba-3807-11e8-9b31-35342beb494e.png'}
     /><Marker
       position={{ lat: -12.0402,
         lng: -77.0903}}

@@ -27,7 +27,7 @@ export default class ChartResume extends Component {
   render() {
     return (
       <Grid>
-        <Row className= 'chartResume'>
+        <div className= 'chartResume'>
           <Col md={12} className='chart-box'>
           <AreaChart className='areaChart'width = {250} height={210} data={data}
             margin={{ top: 10, left: 0, bottom: 0 }}>
@@ -50,7 +50,7 @@ export default class ChartResume extends Component {
             <Legend /> 
           </AreaChart>
           </Col>
-        </Row>
+        </div>
       </Grid>
     )
   }

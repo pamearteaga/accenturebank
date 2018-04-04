@@ -32,6 +32,64 @@
   border-radius: 15px;
 }
 
+.Accounts button{
+  width: 80%;
+  height: auto;
+  margin-top: 30px;
+  border: 1px solid orange;
+  border-radius: none;
+  outline: none;
+}
+
+.Accounts button:active:hover{
+  border: 1px solid orange;
+  border-radius: none;
+  background: white;
+}
+
+.Accounts input{
+  width: 80%;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  background: #b2b2b2;
+}
+
+input::-webkit-input-placeholder { 
+  color: white;
+  font-family: "Graphik4", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+input::-moz-placeholder { 
+ color: white;
+ font-family: "Graphik4", Arial, Helvetica, sans-serif;
+ text-align: center;
+}
+input:-ms-input-placeholder { 
+ color: white;
+ font-family: "Graphik4", Arial, Helvetica, sans-serif;
+ text-align: center;
+}
+input:-moz-placeholder { 
+  color: white;
+  font-family: "Graphik4", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+button h3{
+  font-family: "Graphik4", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+button h2{
+  font-family: "Graphik4", Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  color: #9802e2;
+}
+
 select{
   width: 60%;
   height: 30px;
@@ -65,10 +123,6 @@ a{
 a:hover{
   color: #666;
   text-decoration: none;
-}
-
-.glyphicon{
-  font-size: 1.7em;
 }
 
 .empresa, .monto{

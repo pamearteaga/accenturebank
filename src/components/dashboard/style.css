@@ -26,18 +26,30 @@
     }
 .consumido{
     margin-top: -20px;
+    margin-bottom: 20px;
     padding-top: 10px; 
     padding-bottom: 10px;
     width: 100%;
     text-align: center; 
-    background: yellow
+    border: 3px dotted #6EF618;
+    font-family: "Graphik4", Arial, Helvetica, sans-serif;
 }
 
 .saldoContable{
     margin-top: 10px; 
-    background-color: orange; 
+    background-color: #f4f4f4; 
+    margin-top: 30px;
+    margin-bottom: 30px;
     height: 70px;
-    color: #9802e2; 
+    color: #9802e2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
+}
+.saldoContable h4{
+    font-size: 1em; 
+    color: #333;
+    text-align: center;
+    font-family: "Graphik4", Arial, Helvetica, sans-serif;
 }
 .box-gastado{
     padding-top: 100px;
@@ -55,8 +67,8 @@
     margin-left: 0;
 }
 .areaChart{
-    width:500px;
-    height:500px; 
+    width: 500px;
+    height: 500px; 
 }
 @media screen and (max-width: 485px) {
     .box-gastado{
@@ -75,8 +87,8 @@
     }
 
     .areaChart{
-        width:250px;
-        height:220px; 
+        width: 250px;
+        height: 220px; 
     }
 
 

@@ -77,7 +77,7 @@ class MyAccounts extends Component {
         <DatePicker
           onChange={this.handleChange.bind(this)}
           includeDates={fechas}
-          placeholderText="Fechas con Movimientos" />
+          placeholderText="Selecciona una fecha" />
 
         {loading === false ?
           singleMove.map(acc => {

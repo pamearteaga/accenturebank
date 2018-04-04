@@ -1,3 +1,11 @@
 .panel{
 	overflow: hidden;
 }
+
+.react-datepicker-wrapper, .react-datepicker__input-container {
+    display: block !important;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] {
+    margin: 10px 130px;
+}

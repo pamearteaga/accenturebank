@@ -82,9 +82,9 @@ class Accounts extends Component {
               return (
                 <Row key={acc.NCUENTA}>
                   <Button id={acc.NCUENTA} onClick={this.select.bind(this)}>
-                    <h4 id={acc.NCUENTA}>{acc.NCUENTA}</h4>
+                    <h3 id={acc.NCUENTA}>{acc.NCUENTA}</h3>
                     <p id={acc.NCUENTA}>{type}</p>
-                    <p id={acc.NCUENTA}>{acc.SALDO} Soles</p>
+                    <h2 id={acc.NCUENTA}>{acc.SALDO} Soles</h2>
                   </Button>
                 </Row>
               )
