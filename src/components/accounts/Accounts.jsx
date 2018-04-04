@@ -48,7 +48,9 @@ constructor(props) {
 
   select(event) {
     console.log(event.target.id);
-    this.setState({select: event.target.id, selected:true,
+    this.setState({
+      select: event.target.id,
+      selected: true,
     })
   }
 
@@ -75,13 +77,13 @@ constructor(props) {
                   </Button>
                 </Row>
               )
-            }) : 
+            }) :
             <h3> Cargando
             </h3>
             }
           </div>
-        : 
-         <MyAccounts select={select} movimientos={movimientos} />
+          :
+          <MyAccounts select={select} movimientos={movimientos} selected={str => this.setState({ selected: str })}/>
         }
       </div>
     );
