@@ -20,13 +20,13 @@ class Home extends Component {
     return (
       <Router>
         <div>
-        <Navbar
-          src={src}
-          title={title}
-          onClick={onClick} />    
-        {/* <Route exact path="/" component={Dashboard} /> */}
-        <Route path="/Accounts" component={Accounts} />
-        <Route path="/Sucursales" component={Offices} />
+          <Navbar
+            src={src}
+            title={title}
+            onClick={onClick} />
+          {/* <Route exact path="/" component={Dashboard} /> */}
+          <Route path="/Accounts" component={Accounts} />
+          <Route path="/Sucursales" component={Offices} />
         </div>
 
       </Router>
