@@ -32,6 +32,7 @@
     width: 100%;
     text-align: center; 
     border: 3px dotted #6EF618;
+    background: rgba(110, 246, 24, 0.5);
     font-family: "Graphik4", Arial, Helvetica, sans-serif;
 }
 
