@@ -50,7 +50,8 @@ class Accounts extends Component {
   select(event) {
     console.log(event.target.id);
     this.setState({
-      select: event.target.id, selected: true,
+      select: event.target.id, 
+      selected: true,
     })
   }
 
@@ -83,7 +84,7 @@ class Accounts extends Component {
             }
           </div>
           :
-          <MyAccounts select={select} movimientos={movimientos} />
+          <MyAccounts select={select} movimientos={movimientos} selected={str => this.setState({ selected: str })}/>
         }
       </div>
     );
