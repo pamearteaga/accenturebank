@@ -41,6 +41,7 @@ class Navbar extends Component {
               </li>
               <li><a href="#">Dashboard</a></li>
               <li><Link to="/Accounts">My Accounts</Link></li>
+              
               <li><a href="#">Credit Cards</a></li>
               <li><a href="#" onClick={onClick}>Logout</a></li>
             </ul>

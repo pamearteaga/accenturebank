@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Accounts from './accounts/Accounts';
 import Navbar from './navbar/Navbar.jsx';
+import Offices from './ContainerMap/index';
 
 class Home extends Component {
   constructor(src, title, onClick) {
@@ -22,11 +23,12 @@ class Home extends Component {
         <Navbar
           src={src}
           title={title}
-          onClick={onClick} />
+          onClick={onClick} />    
         {/* <Route exact path="/" component={Dashboard} /> */}
         <Route path="/Accounts" component={Accounts} />
-        {/* <Route path="/Sucursales" component={Sucursales} /> */}
+        <Route path="/Sucursales" component={Offices} />
         </div>
+
       </Router>
     );
   }
