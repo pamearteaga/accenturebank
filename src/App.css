@@ -41,6 +41,7 @@ font-family: "Graphik", Arial, Helvetica, sans-serif;
 
 .logo {
   max-width: 5em;
+  max-height: 3em;
 }
 .logo-container {
   display: flex;
@@ -55,4 +56,8 @@ font-family: "Graphik", Arial, Helvetica, sans-serif;
 .facebook {
   background-color:  #3b5998;
   color: #fff;  
+}
+
+.navbar{
+  margin-bottom: 0;
 }

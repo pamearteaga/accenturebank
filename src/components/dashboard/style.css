@@ -1,0 +1,83 @@
+
+.box-dashboard{
+    height: 90vh;
+    width: 100%; 
+}
+
+.chartResume {
+    height: 40vh;
+    width: 100%;  
+}
+.chart-box{
+    z-index: -1000;
+}
+.resumeSaldo{
+    height: 16vh;
+}
+    .resumeSaldo h5{
+        text-align: center;
+        font-size: 12px;
+        text-transform: uppercase; 
+    }
+    .resumeSaldo h3 {
+        text-align: center;
+        margin-top: 10px; 
+        font-weight: 700; 
+    }
+.consumido{
+    margin-top: -20px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center; 
+    background: yellow
+}
+
+.saldoContable{
+    margin-top: 10px; 
+    background-color: orange; 
+    height: 70px;
+    color: #9802e2; 
+}
+.box-gastado{
+    padding-top: 100px;
+    height: 30vh;
+}
+
+.box-gastado p{
+    font-size: 20px; 
+}
+
+.anychart-credits{
+    display: none; 
+}
+.otherchart{
+    margin-left: 0;
+}
+.areaChart{
+    width:500px;
+    height:500px; 
+}
+@media screen and (max-width: 485px) {
+    .box-gastado{
+        height: 20vh;
+        padding-top: 50px;
+    }
+
+    #ac-chart-container{
+        height: 33vh;
+    }
+    .gastado {
+        height: 30vh;
+    }
+    .box-gastado p{
+        font-size: 16px; 
+    }
+
+    .areaChart{
+        width:250px;
+        height:220px; 
+    }
+
+
+}
