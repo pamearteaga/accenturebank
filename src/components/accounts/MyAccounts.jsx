@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { Button, Row, Panel} from 'react-bootstrap';
+import './../../components/accounts/MyAccounts.css';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
-import { Button, Row } from 'react-bootstrap';
 import 'react-datepicker/dist/react-datepicker.css';
 
 moment.locale('es');
@@ -35,10 +36,10 @@ class MyAccounts extends Component {
     ))
     console.log(datearray);
     
-    this.setState({ 
-      cuenta: newMove[0], 
-      singleMove: newMove[0].MOVIMIENTOS, 
-      loading: false, 
+    this.setState({
+      cuenta: newMove[0],
+      singleMove: newMove[0].MOVIMIENTOS,
+      loading: false,
       fechas: datearray,
     })
   }
@@ -62,7 +63,7 @@ class MyAccounts extends Component {
       singleMove: newMove,
     })
     
-    
+  
   }
 
   render() {
@@ -73,7 +74,7 @@ class MyAccounts extends Component {
     return (
       <div className="Accounts">
         <Button onClick={this.handleclick.bind(this)}>Regresar</Button>
-        <DatePicker          
+        <DatePicker
           onChange={this.handleChange.bind(this)}
           includeDates={fechas}
           placeholderText="Fechas con Movimientos" />
@@ -82,25 +83,24 @@ class MyAccounts extends Component {
           singleMove.map(acc => {
             counter ++;
             return (
-              <Row key={counter }>
-                <Button id={acc.FECHA}>
-                  <h4>{acc.EMPRESA}</h4>
-                  <p>{acc.FECHA}</p>
-                  <p>{acc.MONTO} Soles</p>
-                </Button>
+              <Row key={counter}>
+                <div>
+                  <Panel className="panel">
+                    <Panel.Heading>
+                      <h4>{acc.EMPRESA}</h4>
+                    </Panel.Heading>
+                    <Panel.Body>
+                      <p>Fecha: {acc.FECHA}</p>
+                      <p>Monto: {acc.MONTO} Soles</p>
+                    </Panel.Body>
+                  </Panel>
+                </div>
               </Row>
-
             )
-
           })
-
           :
-          <h2> Cargando
-          </h2>
-
+          <h2> Cargando</h2>
         }
-
-
       </div>
     );
   }
